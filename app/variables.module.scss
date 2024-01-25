@@ -1,0 +1,44 @@
+$almost-black: hsl(320, 6%, 10%);
+$black: hsl(0, 0%, 11%);
+$white: hsl(340, 14%, 96%);
+$gray: hsl(0, 0%, 70%);
+$primary: hsl(278, 100%, 83%);
+$secondary: hsl(272, 63%, 46%);
+$accent: hsl(274, 100%, 75%);
+
+// Font Sizes
+$font-size-xxs: 0.75rem;
+$font-size-xs: 0.875rem;
+$font-size-sm: 1rem;
+$font-size-md: 1.125rem;
+$font-size-lg: 1.25rem;
+$font-size-xl: 1.5rem;
+$font-size-xxl: 2rem;
+$font-size-xxxl: 3rem;
+
+// Font Weights
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+$line-height: 1.8;
+
+:export{
+    BRX-black: $black;
+    BRX-white: $white;
+    primary: $primary;
+    secondary: $secondary;
+    accent: $accent;
+    font-size-xxs: $font-size-xxs;
+    font-size-xs: $font-size-xs;
+    font-size-sm: $font-size-sm;
+    font-size-md: $font-size-md;
+    font-size-lg: $font-size-lg;
+    font-size-xl: $font-size-xl;
+    font-size-xxl: $font-size-xxl;
+    font-size-xxxl: $font-size-xxxl;
+    font-weight-light: $font-weight-light;
+    font-weight-normal: $font-weight-normal;
+    font-weight-bold: $font-weight-bold;
+}
+

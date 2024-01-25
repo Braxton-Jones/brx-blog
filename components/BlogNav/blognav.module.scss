@@ -1,0 +1,58 @@
+@import '../../app/variables.module.scss';
+
+.blog_nav {
+    background-color: $almost-black;
+    margin: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $white;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    box-shadow: $primary 0px 2px 0px;
+  
+   &_name{
+        font-size: $font-size-xs;
+        font-weight: $font-weight-bold;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+        padding: 0.5rem;
+        transition: all 0.2s ease-in-out;
+
+        &:hover{
+            color: $primary;
+        }
+   
+   }
+  
+    .blog_nav_views {
+        background-color: hsla(0, 0%, 70%, 0.2);
+        display: flex;
+        justify-content: space-between;
+        gap: .5rem;
+        padding: 0.5rem;
+        border-radius: 5px;
+        font-weight: $font-weight-bold;
+
+        .blog_nav_selectedRoute{
+            background-color: $primary;
+            letter-spacing: 0.1rem;
+
+        }
+
+        a{
+            padding: 0.5rem 0.5rem;
+            border-radius: 0.5rem;
+            transition: all 0.2s ease-in-out;
+
+            &:hover{
+                background-color: $primary;
+                padding: 0.5rem 1rem;
+            }
+        }
+
+    }
+}
+  
