@@ -6,8 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "format": "prettier --write .js .jsx .ts .tsx"
+    "lint": "next lint"
   },
   "dependencies": {
     "@sanity/client": "^6.11.3",
