@@ -6,7 +6,6 @@ export default function BlogGrid({posts}) {
       <h2>Posts</h2>
       <div className={classnames.bloggrid__container}>
         {posts.map((post) => {
-          console.log(post, "from blog map")
           return (
             <Link key={post._id} href={`/blog/${post.slug.current}`}>
             <article key={post._id} className={classnames.bloggrid__item}>
