@@ -3,20 +3,39 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 15px;
-    margin: 1rem 0;
+    gap: 25px;
+    margin: 5rem 0;
     &_headshot{
         img{
-            border-radius: 10px;
-            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+            box-shadow: rgba(161, 124, 203, 0.2) 0px 12px 28px 0px, rgba(161, 124, 203, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+            border-radius: .8rem;
         }
 
     }
     &_text{
-        color: $white;
-        font-weight: $font-weight-normal;
+        color: $text-color;
+        font-weight: $font-weight-bold;
         line-height: $line-height;
+        font-size: $font-size-lg;
+        margin-inline: 1.3rem;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        max-width: 500px;
 
 
+    }
+
+    @media screen and (min-width: 1000px){
+        justify-content: center;
+        flex-direction: row;
+        gap: 100px;
+        margin: 3rem 0;
+        &_text{
+            font-size: $font-size-xl;
+            margin-inline: 0;
+            max-width: 600px;
+        }
+        
     }
 }

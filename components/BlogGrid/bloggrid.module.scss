@@ -1,1 +1,88 @@
-@import "../../app/variables.module.scss"
+@import "../../app/variables.module.scss";
+.bloggrid {
+    margin-bottom: 10rem;
+    margin-inline: 1.6rem ;
+    
+
+    @media screen and (max-width: 1000px){
+       padding: 1rem;
+    }
+    h2 {
+      font-size: $font-size-xxxl;
+      font-weight: $font-weight-bold;
+        margin-bottom: 3rem;
+    }
+    
+  
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+        grid-template-rows: minmax(300px, auto);
+
+        @media screen and (max-width: 1000px){
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+  
+    &__item {
+      grid-column: span 2;
+      height: 100%;
+    
+      
+      &__card{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        -webkit-box-shadow: 0px 0px 147px -31px rgba(255,255,255,0.42);
+        -moz-box-shadow: 0px 0px 147px -31px rgba(255,255,255,0.42);
+        box-shadow: 0px 0px 147px -31px rgba(255,255,255,0.42);
+        border-radius: 20px;
+        transition: all 0.2s ease-in-out;
+        &_top {
+            height: 200px;
+            border-radius: 20px 20px 0 0px;
+            .status {
+            border: 2px solid rgba(255, 255, 255, 9) ;
+            width: fit-content;
+            padding: .5rem 1rem;
+            border-radius: 30px;
+            font-weight: $font-weight-bold;
+            margin: 1rem 0 0 1rem;
+            
+            }
+          }
+      
+          &_bottom {
+            background-color: #222222;
+            padding: 1rem;
+            h3{
+                font-size: $font-size-xl;
+                font-weight: $font-weight-bold;
+                margin-bottom: 1rem;
+            }
+            p{
+                font-size: $font-size-md;
+                line-height: $line-height;
+            }
+      
+            &__info {
+              display: flex;
+              gap: 1rem;
+              span {
+                color: $accent;
+              }
+            }
+          }
+
+        &:hover{
+            transform: scale(1.02);
+            cursor: pointer;
+            .status{
+                border: 2px solid $accent;
+            }
+        }
+      }
+      
+    }
+  }

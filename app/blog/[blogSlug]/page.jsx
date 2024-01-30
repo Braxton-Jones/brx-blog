@@ -24,7 +24,7 @@ export default async function page({ params }) {
 
   return (
     <>
-    <header>
+    <header className={classnames.header}>
       <GoBackBtn/>
     </header>
     <section className={classnames.blogpage}>

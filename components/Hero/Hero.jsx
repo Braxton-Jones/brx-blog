@@ -1,3 +1,4 @@
+import Link from "next/link"
 import classnames from "./hero.module.scss"
 import Image from "next/image"
 export default function Hero() {
@@ -7,27 +8,21 @@ export default function Hero() {
             <Image 
                 src="/headshot.png" 
                 alt="Hero Image" 
-                width={350} 
-                height={450}/>
+                width={250} 
+                height={350}/>
         </div>
         <div className={classnames.hero_text}>
-        <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  </p>
-
   <p>
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    Hey, I'm Braxton Jones, a full-stack web developer who thrives at the intersection of functionality and creativity.
   </p>
-
   <p>
-    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    Currently, I'm working on my latest project, <Link href="#" className={classnames.project_name}>soloprojdev</Link>, where I'm making a project management system for solo creatives.
   </p>
-
   <p>
-    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    Besides coding , I love reading, I'm a  melophile, and i'm currently intersested in Human-Computer Interaction.
   </p>
-        
-        </div>    
+</div>
+   
     </section>
   )
 }

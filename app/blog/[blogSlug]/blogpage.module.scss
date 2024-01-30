@@ -1,6 +1,14 @@
 @import "../../variables.module.scss";
+.header{
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+}
 .blogpage{
     margin-inline: 1.5rem;
+    max-width: 750px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -30,7 +38,7 @@
             gap: 1rem;
             p{
                 font-size: $font-size-md;
-                line-height: $line-height;
+                line-height: 1.7;
             }
         }
     }

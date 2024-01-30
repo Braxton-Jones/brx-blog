@@ -5,9 +5,20 @@ import { useRouter } from 'next/navigation'
 
 export default function GoBackBtn() {
   const router = useRouter()
+
+  const handleButtonClick = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
   return (
     <button 
-      onClick={() => router.back()}
+      onClick={() => {
+        router.back();
+        handleButtonClick();
+      }}
       style={{
         background: 'hsl(274, 100%, 75%)',
         border: 'none',

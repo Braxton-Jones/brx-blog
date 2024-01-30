@@ -1,4 +1,3 @@
-import Tagline from "@/components/Tagline/Tagline.jsx"
 import BlogNav from "../components/BlogNav/BlogNav.jsx"
 import Hero from "@/components/Hero/Hero.jsx"
 import BlogGrid from "@/components/BlogGrid/BlogGrid.jsx"
@@ -16,7 +15,6 @@ export default async function Home() {
   return (<>
   <main className={classname.main}>
       <BlogNav/>
-      <Tagline/>
       <Hero/>
       <BlogGrid posts={posts}/>
   </main>
