@@ -15,9 +15,12 @@
     color: $white;
     .heroImage{
         border-radius: 2rem;
+        margin-inline: 1.5rem;
     }
     
     .blogpage__container{
+        margin-inline: 1.5rem;
+        
         h2{
             font-size: $font-size-xxl;
             font-weight: $font-weight-bold;

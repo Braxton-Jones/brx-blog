@@ -16,8 +16,9 @@ export default function GoBackBtn() {
   return (
     <button 
       onClick={() => {
-        router.back();
         handleButtonClick();
+        router.back();
+        
       }}
       style={{
         background: 'hsl(274, 100%, 75%)',
