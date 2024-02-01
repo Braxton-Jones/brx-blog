@@ -11,6 +11,7 @@ export default function BlogNav() {
                     src={"/portfolio.png"}
                     width={25}
                     height={25}
+                    alt='portfolio icon'
                     >
                     </Image>
                 </Link>
@@ -19,6 +20,7 @@ export default function BlogNav() {
                     src={"/github.png"}
                     width={25}
                     height={25}
+                    alt='github icon'
                     >
                     </Image>
                 </Link>

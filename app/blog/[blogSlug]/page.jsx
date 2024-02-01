@@ -3,6 +3,7 @@ import { sanityxClient } from '@/app/lib/sanity';
 import { builder } from '@/app/lib/sanity';
 import classnames from "./blogpage.module.scss"
 import GoBackBtn from '@/components/utility/GoBackBtn';
+import Image from 'next/image';
 
 
 
@@ -28,7 +29,7 @@ export default async function page({ params }) {
       <GoBackBtn/>
     </header>
     <section className={classnames.blogpage}>
-      <img src={imgsrc} alt={accentImage.alt} className={classnames.heroImage}/>
+      <Image src={imgsrc} alt={accentImage.alt} className={classnames.heroImage}/>
       <div className={classnames.blogpage__container}>
         <h2>{postTitle}</h2>
         <div className={classnames.blogpage__info}>
