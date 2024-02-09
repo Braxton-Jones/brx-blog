@@ -16,7 +16,7 @@ export default function Hero() {
     {`Hey, I'm Braxton Jones, a full-stack web developer who thrives at the intersection of functionality and creativity.`}
   </p>
   <p>
-    {`Currently, I'm working on my latest project, ${<Link href="#" className={classnames.project_name}>BPA</Link>}, a personal task management tool that integrates features  gaming mechanics such as battle passes, loot boxes, and dynamic daily and weekly challenges.`}
+    {`Currently, I'm working on my latest project, AgileQuest, a personal task management tool that integrates features  gaming mechanics such as battle passes, loot boxes, and dynamic daily and weekly challenges.`}
   </p>
   <p>
     {`Besides coding , I love reading, I'm a melophile, and i'm currently intersested in Human-Computer Interaction.`}
