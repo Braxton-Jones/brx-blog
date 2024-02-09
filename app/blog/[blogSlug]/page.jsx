@@ -29,7 +29,7 @@ export default async function page({ params }) {
       <GoBackBtn/>
     </header>
     <section className={classnames.blogpage}>
-      <Image src={imgsrc} alt={accentImage.alt} className={classnames.heroImage}/>
+      <img src={imgsrc} alt={accentImage.alt} className={classnames.heroImage}/>
       <div className={classnames.blogpage__container}>
         <h2>{postTitle}</h2>
         <div className={classnames.blogpage__info}>
