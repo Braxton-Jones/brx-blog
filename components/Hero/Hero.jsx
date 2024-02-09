@@ -19,7 +19,7 @@ export default function Hero() {
     {`Currently, I'm working on my latest project, AgileQuest, a personal task management tool that integrates features  gaming mechanics such as battle passes, loot boxes, and dynamic daily and weekly challenges.`}
   </p>
   <p>
-    {`Besides coding , I love reading, I'm a melophile, and i'm currently intersested in Human-Computer Interaction.`}
+    {`Besides coding , I love reading, I'm a melophile, and i'm currently interested in Human-Computer Interaction.`}
   </p>
 </div>
    
